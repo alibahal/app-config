@@ -1,20 +1,79 @@
 {
-//this is for application tartup
   "version": 1,
+  "lastUpdated": "2026-08-30T21:30:00Z",
+
+  "environments": {
+    "production": {
+      "primaryUrl": "https://api.peyvandgah.com",
+      "fallbackUrls": [
+        "https://backup-api.peyvandgah.com"
+      ],
+      "signalRHubUrl": "https://api.peyvandgah.com/messageHub"
+    },
+    "staging": {
+      "primaryUrl": "https://staging-api.peyvandgah.com",
+      "fallbackUrls": [],
+      "signalRHubUrl": "https://staging-api.peyvandgah.com/messageHub"
+    },
+    "development": {
+      "androidEmulatorUrl": "http://10.0.2.2:5111",
+      "iosSimulatorUrl": "http://localhost:5111",
+      "physicalDeviceLanUrl": "http://192.168.0.199:5111",
+      "fallbackUrls": [
+        "http://192.168.0.199:5111",
+        "http://10.0.2.2:5111",
+        "http://localhost:5111"
+      ],
+      "signalRHubUrl": "/messageHub"
+    }
+  },
+
   "api": {
     "primaryUrl": "https://api.peyvandgah.com",
     "fallbackUrls": [
-      "http://192.168.0.199:5111",
       "https://backup-api.peyvandgah.com"
     ],
-    "stagingUrl": "http://192.168.0.199:5111",
-    "signalRHubUrl": "http://192.168.0.199:5111/messageHub"
+    "stagingUrl": "https://staging-api.peyvandgah.com",
+    "signalRHubUrl": "https://api.peyvandgah.com/messageHub"
   },
+
+  "app": {
+    "minAppVersion": "1.0.0",
+    "latestAppVersion": "1.0.0",
+    "forceUpdate": false,
+    "updateUrl": {
+      "android": "https://play.google.com/store/apps/details?id=com.frg.nelone",
+      "ios": "https://apps.apple.com/app/id123456789",
+      "cafeBazaar": "https://cafebazaar.ir/app/com.frg.nelone",
+      "myket": "https://myket.ir/app/com.frg.nelone",
+      "directApk": "https://dl.peyvandgah.com/nelone.apk"
+    }
+  },
+
+  "maintenance": {
+    "enabled": false,
+    "message": {
+      "en": "Server is temporarily under maintenance. Please check back shortly.",
+      "fa": "سرور در حال به‌روزرسانی و تعمیرات است. لطفاً دقایقی دیگر تلاش کنید.",
+      "zh": "服务器正在临时维护中。请稍后回来查看。",
+      "hi": "सर्वर अस्थायी रूप से रखरखाव के अधीन है। कृपया थोड़ी देर बाद वापस आएं।",
+      "es": "El servidor está temporalmente en mantenimiento. Por favor, vuelva a intentarlo en breve.",
+      "fr": "Le serveur est temporairement en maintenance. Veuillez réessayer dans quelques instants.",
+      "ar": "الخادم تحت الصيانة المؤقتة. يرجى التحقق مرة أخرى قريباً.",
+      "pt": "O servidor está temporariamente em manutenção. Por favor, tente novamente em breve.",
+      "ru": "Сервер временно находится на техническом обслуживании. Пожалуйста, зайдите позже.",
+      "de": "Der Server wird vorübergehend gewartet. Bitte versuchen Sie es in Kürze erneut.",
+      "tr": "Sunucu geçici olarak bakımda. Lütfen kısa süre sonra tekrar kontrol edin."
+    },
+    "estimatedEndTimeUtc": null
+  },
+
   "features": {
     "enableSignalR": true,
     "enableVideoCalls": true,
-    "enablePushNotifications": true
-  },
-  "minAppVersion": "1.0.0",
-  "maintenanceMode": false
+    "enablePushNotifications": true,
+    "enableCompatibility": true,
+    "enablePurchasing": true,
+    "enableChat": true
+  }
 }

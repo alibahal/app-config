@@ -1,0 +1,20 @@
+{
+  //this is for application startup
+  "version": 1,
+  "api": {
+    "primaryUrl": "https://api.peyvandgah.com",
+    "fallbackUrls": [
+      "https://api2.peyvandgah.com",
+      "https://backup-api.peyvandgah.com"
+    ],
+    "stagingUrl": "https://staging-api.peyvandgah.com",
+    "signalRHubUrl": "https://api.peyvandgah.com/chatHub"
+  },
+  "features": {
+    "enableSignalR": true,
+    "enableVideoCalls": true,
+    "enablePushNotifications": true
+  },
+  "minAppVersion": "1.0.0",
+  "maintenanceMode": false
+}

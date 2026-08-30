@@ -1,14 +1,14 @@
 {
-  //this is for application startup
+//this is for application tartup
   "version": 1,
   "api": {
     "primaryUrl": "https://api.peyvandgah.com",
     "fallbackUrls": [
-      "https://api2.peyvandgah.com",
+      "http://192.168.0.199:5111",
       "https://backup-api.peyvandgah.com"
     ],
-    "stagingUrl": "https://staging-api.peyvandgah.com",
-    "signalRHubUrl": "https://api.peyvandgah.com/chatHub"
+    "stagingUrl": "http://192.168.0.199:5111",
+    "signalRHubUrl": "http://192.168.0.199:5111/messageHub"
   },
   "features": {
     "enableSignalR": true,

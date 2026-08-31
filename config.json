@@ -16,14 +16,21 @@
       "signalRHubUrl": "https://staging-api.peyvandgah.com/messageHub"
     },
     "development": {
+      "androidEmulatorUrl": "http://10.0.2.2:5111",
       "androidEmulatorHttpsUrl": "https://10.0.2.2:7207",
+      "iosSimulatorUrl": "http://localhost:5111",
       "iosSimulatorHttpsUrl": "https://localhost:7207",
       "physicalDeviceLanUrl": "http://192.168.0.199:5111",
       "fallbackUrls": [
-        "https://192.168.50.14:7207",
+        "http://192.168.0.199:5111",
         "https://192.168.0.199:7207",
-        "https://127.0.0.1:7207",
+        "http://192.168.50.14:5111",
+        "https://192.168.50.14:7207",
+        "http://10.0.2.2:5111",
         "https://10.0.2.2:7207",
+        "http://127.0.0.1:5111",
+        "https://127.0.0.1:7207",
+        "http://localhost:5111",
         "https://localhost:7207"
       ],
       "signalRHubUrl": "/messageHub"

@@ -76,5 +76,14 @@
     "enableCompatibility": true,
     "enablePurchasing": true,
     "enableChat": true
+  },
+
+  "telemetry": {
+    "enabled": true,
+    "enableLogs": true,
+    "enableMetrics": true,
+    "enableTracing": true,
+    "batchSize": 25,
+    "flushIntervalSeconds": 60
   }
 }

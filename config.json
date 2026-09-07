@@ -18,7 +18,7 @@
     "development": {
       "androidEmulatorHttpsUrl": "https://10.0.2.2:7207",
       "iosSimulatorHttpsUrl": "https://localhost:7207",
-      "physicalDeviceLanUrl": "https://192.168.0.199:7207",
+      "physicalDeviceLanUrl": "https://192.168.0.198:7207",
       "fallbackUrls": [
         "https://192.168.8.100:7207",
         "https://10.0.2.2:7207",

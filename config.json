@@ -20,7 +20,7 @@
       "iosSimulatorHttpsUrl": "https://localhost:7207",
       "physicalDeviceLanUrl": "https://192.168.8.101:7207",
       "fallbackUrls": [
-        "https://192.168.0.198:7207",
+        "https://192.168.0.199:7207",
         "https://10.0.2.2:7207",
         "https://127.0.0.1:7207",
         "https://localhost:7207"

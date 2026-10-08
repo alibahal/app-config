@@ -4,9 +4,9 @@
 
   "environments": {
     "production": {
-      "primaryUrl": "https://api.peyvandgah.com",
+      "primaryUrl": "https://192.168.0.199",
       "fallbackUrls": [
-        "https://backup-api.peyvandgah.com"
+        "https://192.168.0.199"
       ],
       "signalRHubUrl": "/messageHub"
     },

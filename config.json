@@ -4,9 +4,9 @@
 
   "environments": {
     "production": {
-      "primaryUrl": "https://192.168.0.199",
+      "primaryUrl": "https://192.168.0.199:7207",
       "fallbackUrls": [
-        "https://192.168.0.199"
+        "https://192.168.0.199:7207"
       ],
       "signalRHubUrl": "/messageHub"
     },

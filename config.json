@@ -4,9 +4,9 @@
 
   "environments": {
     "production": {
-      "primaryUrl": "https://192.168.0.199:7207",
+      "primaryUrl": "https://api.peyvandgah.com",
       "fallbackUrls": [
-        "https://192.168.0.199:7207"
+        "https://backup-api.peyvandgah.com"
       ],
       "signalRHubUrl": "/messageHub"
     },
@@ -16,8 +16,9 @@
       "signalRHubUrl": "/messageHub"
     },
     "development": {
-      "primaryUrl": "https://192.168.0.199:7207",
+      "primaryUrl": "https://172.16.1.53:7207",
       "fallbackUrls": [
+        "https://172.16.1.53:7207",
         "https://localhost:7207"
       ],
       "signalRHubUrl": "/messageHub"
